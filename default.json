@@ -4,7 +4,8 @@
     ":separateMultipleMajorReleases",
     ":timezone(Asia/Tokyo)",
     ":labels(dependencies)",
-    "github>tpu-dsg/renovate-config:actions"
+    "github>tpu-dsg/renovate-config:actions",
+    "github>tpu-dsg/renovate-config:node"
   ],
   "configMigration": true,
   "minimumReleaseAge": "3 days",
