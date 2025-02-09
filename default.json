@@ -5,7 +5,8 @@
     ":timezone(Asia/Tokyo)",
     ":labels(dependencies)",
     "github>tpu-dsg/renovate-config:actions",
-    "github>tpu-dsg/renovate-config:node"
+    "github>tpu-dsg/renovate-config:node",
+    "github>tpu-dsg/renovate-config:python"
   ],
   "configMigration": true,
   "minimumReleaseAge": "3 days",

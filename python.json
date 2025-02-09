@@ -1,0 +1,35 @@
+{
+  "packageRules": [
+    {
+      "matchPackageNames": ["astral-sh/ruff-pre-commit", "ruff"],
+      "customChangelogUrl": "https://github.com/astral-sh/ruff",
+      "groupName": "ruff",
+      "groupSlug": "ruff"
+    },
+    {
+      "matchPackageNames": ["fastai/nbdev", "nbdev"],
+      "groupName": "nbdev",
+      "groupSlug": "nbdev"
+    },
+    {
+      "matchPackageNames": ["torch", "torchvision", "torchaudio"],
+      "groupName": "PyTorch",
+      "groupSlug": "pytorch"
+    },
+    {
+      "matchPackageNames": ["nvidia/cuda"],
+      "enabled": false
+    },
+    {
+      "matchDatasources": ["pypi", "conda"],
+      "allowedUpdateTypes": ["patch"]
+    },
+    {
+      "matchDepTypes": ["dependency-groups"],
+      "allowedUpdateTypes": ["patch", "minor", "major"],
+      "patch": {
+        "automerge": true
+      }
+    }
+  ]
+}
