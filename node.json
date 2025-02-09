@@ -1,0 +1,12 @@
+{
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@types/", "^prettier"],
+      "extends": ["helpers:disableTypesNodeMajor", "packages:eslint"],
+      "automerge": true,
+      "major": {
+        "automerge": false
+      }
+    }
+  ]
+}
