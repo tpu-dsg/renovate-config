@@ -22,11 +22,21 @@
     },
     {
       "matchDatasources": ["pypi", "conda"],
-      "allowedUpdateTypes": ["patch"]
+      "major": {
+        "enabled": false
+      },
+      "minor": {
+        "enabled": false
+      }
     },
     {
       "matchDepTypes": ["dependency-groups"],
-      "allowedUpdateTypes": ["patch", "minor", "major"],
+      "major": {
+        "enabled": true
+      },
+      "minor": {
+        "enabled": true
+      },
       "patch": {
         "automerge": true
       }
